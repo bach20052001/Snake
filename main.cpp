@@ -213,9 +213,13 @@ void Load(){
 
     /// Eat
     if (_HeadSnakeX - 1 == _FruitX && _HeadSnakeY - 1  == _FruitY) {
-        srand(time(0));
-        _FruitX = rand() % (width-1) + 1;
-        _FruitY = rand() % (height-1) + 1;
+        srand(time(NULL));
+        _FruitX = rand() % (width-1);
+        _FruitY = rand() % (height-1);
+
+        if (_FruitX == 0) _FruitX++;
+        if (_FruitY == 0) _FruitY++;
+
         if (_score % 50 == 0 &&_score != 0){
             _score += 20;
             _nTailSnake+=2;
