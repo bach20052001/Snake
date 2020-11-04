@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1604490463 source:e:\16game\t16\snakeremake\main.cpp
+	<iostream>
+	<conio.h>
+	<windows.h>
+	<time.h>
+
